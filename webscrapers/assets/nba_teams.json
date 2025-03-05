@@ -1,0 +1,182 @@
+{
+    "Atlanta": [
+        "Hawks",
+        "Atlanta Hawks",
+        "ATL",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/ATL-2022.png"
+    ],
+    "Boston": [
+        "Celtics",
+        "Boston Celtics",
+        "BOS",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/BOS-2022.png"
+    ],
+    "Brooklyn": [
+        "Nets",
+        "Brooklyn Nets",
+        "BRK",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/BRK-2022.png"
+    ],
+    "Charlotte": [
+        "Hornets",
+        "Charlotte Hornets",
+        "CHO",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/CHO-2022.png"
+    ],
+    "Chicago": [
+        "Bulls",
+        "Chicago Bulls",
+        "CHI",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/CHI-2022.png"
+    ],
+    "Cleveland": [
+        "Cavaliers",
+        "Cleveland Cavaliers",
+        "CLE",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/CLE-2022.png"
+    ],
+    "Dallas": [
+        "Mavericks",
+        "Dallas Mavericks",
+        "DAL",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/DAL-2022.png"
+    ],
+    "Denver": [
+        "Nuggets",
+        "Denver Nuggets",
+        "DEN",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/DEN-2022.png"
+    ],
+    "Detroit": [
+        "Pistons",
+        "Detroit Pistons",
+        "DET",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/DET-2022.png"
+    ],
+    "Golden State": [
+        "Warriors",
+        "Golden State Warriors",
+        "GSW",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/GSW-2022.png"
+    ],
+    "Houston": [
+        "Rockets",
+        "Houston Rockets",
+        "HOU",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/HOU-2022.png"
+    ],
+    "Indiana": [
+        "Pacers",
+        "Indiana Pacers",
+        "IND",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/IND-2022.png"
+    ],
+    "LA Clippers": [
+        "Clippers",
+        "Los Angeles Clippers",
+        "LAC",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/LAC-2022.png"
+    ],
+    "LA Lakers": [
+        "Lakers",
+        "Los Angeles Lakers",
+        "LAL",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/LAL-2022.png"
+    ],
+    "Memphis": [
+        "Grizzlies",
+        "Memphis Grizzlies",
+        "MEM",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/MEM-2022.png"
+    ],
+    "Miami": [
+        "Heat",
+        "Miami Heat",
+        "MIA",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/MIA-2022.png"
+    ],
+    "Milwaukee": [
+        "Bucks",
+        "Milwaukee Bucks",
+        "MIL",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/MIL-2022.png"
+    ],
+    "Minnesota": [
+        "Timberwolves",
+        "Minnesota Timberwolves",
+        "MIN",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/MIN-2022.png"
+    ],
+    "New Orleans": [
+        "Pelicans",
+        "New Orleans Pelicans",
+        "NOP",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/NOP-2022.png"
+    ],
+    "New York": [
+        "Knicks",
+        "New York Knicks",
+        "NYK",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/NYK-2022.png"
+    ],
+    "Oklahoma City": [
+        "Thunder",
+        "Oklahoma City Thunder",
+        "OKC",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/OKC-2022.png"
+    ],
+    "Orlando": [
+        "Magic",
+        "Orlando Magic",
+        "ORL",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/ORL-2022.png"
+    ],
+    "Philadelphia": [
+        "76ers",
+        "Philadelphia 76ers",
+        "PHI",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/PHI-2022.png"
+    ],
+    "Phoenix": [
+        "Suns",
+        "Phoenix Suns",
+        "PHO",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/PHO-2022.png"
+    ],
+    "Portland": [
+        "Trail Blazers",
+        "Portland Trail Blazers",
+        "POR",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/POR-2022.png"
+    ],
+    "Sacramento": [
+        "Kings",
+        "Sacramento Kings",
+        "SAC",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/SAC-2022.png"
+    ],
+    "San Antonio": [
+        "Spurs",
+        "San Antonio Spurs",
+        "SAS",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/SAS-2022.png"
+    ],
+    "Toronto": [
+        "Raptors",
+        "Toronto Raptors",
+        "TOR",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/TOR-2022.png"
+    ],
+    "Utah": [
+        "Jazz",
+        "Utah Jazz",
+        "UTA",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/UTA-2022.png"
+    ],
+    "Washington": [
+        "Wizards",
+        "Washington Wizards",
+        "WAS",
+        "https://cdn.ssref.net/req/202211181/tlogo/bbr/WAS-2022.png"
+    ]
+}

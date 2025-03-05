@@ -1,0 +1,242 @@
+{
+    "MIL": [
+        "milwaukee",
+        "mil",
+        "bucks",
+        "buck",
+        "milwaukee bucks",
+        "milwaukee buck"
+    ],
+    "CHO": [
+        "charlotte",
+        "cho",
+        "hornets",
+        "hornet",
+        "charlotte hornets",
+        "charlotte hornet"
+    ],
+    "CHI": [
+        "chicago",
+        "chi",
+        "bulls",
+        "bull",
+        "chicago bulls",
+        "chicago bull"
+    ],
+    "PHI": [
+        "philadelphia",
+        "philadelphia 76ers",
+        "phi",
+        "philly",
+        "76ers",
+        "76",
+        "philadelphia 76er",
+        "philadelphia 76"
+    ],
+    "NYK": [
+        "new york",
+        "new york knicks",
+        "nyk",
+        "knicks",
+        "knick",
+        "new york knick"
+    ],
+    "WAS": [
+        "washington",
+        "washington wizards",
+        "washington wizard",
+        "was",
+        "wizards",
+        "wizzard"
+    ],
+    "ATL": [
+        "atlanta",
+        "atlanta hawks",
+        "atlanta hawk",
+        "atl",
+        "hawks",
+        "hawk"
+    ],
+    "MIA": [
+        "miami",
+        "miami heat",
+        "mia",
+        "heat"
+    ],
+    "TOR": [
+        "toronto",
+        "toronto raptors",
+        "toronto raptor",
+        "tor",
+        "raptors",
+        "raptor"
+    ],
+    "BRK": [
+        "brooklyn",
+        "brooklyn nets",
+        "brooklyn net",
+        "brk",
+        "nets",
+        "net"
+    ],
+    "CLE": [
+        "cleveland",
+        "cleveland cavaliers",
+        "cleveland cavalier",
+        "cle",
+        "cavs",
+        "cav",
+        "cavaliers",
+        "cavalier"
+    ],
+    "IND": [
+        "indiana",
+        "indiana pacers",
+        "indiana pacer",
+        "ind",
+        "pacers",
+        "pacer"
+    ],
+    "BOS": [
+        "boston",
+        "boston celtics",
+        "boston celtic",
+        "bos",
+        "celtics",
+        "celtic"
+    ],
+    "ORL": [
+        "orlando",
+        "orlando magic",
+        "orl",
+        "magic"
+    ],
+    "DET": [
+        "detroit",
+        "detroit pistons",
+        "detroit piston",
+        "det",
+        "pistons",
+        "piston"
+    ],
+    "GSW": [
+        "golden state",
+        "golden state warriors",
+        "golden state warrior",
+        "gsw",
+        "warriors",
+        "warrior"
+    ],
+    "MEM": [
+        "memphis",
+        "memphis grizzlies",
+        "memphis grizzly",
+        "mem",
+        "grizzlies",
+        "grizzly"
+    ],
+    "MIN": [
+        "minnesota",
+        "minnesota timberwolves",
+        "minnesota timberwolf",
+        "min",
+        "minne",
+        "wolves",
+        "wolf",
+        "timberwolves",
+        "timberwolf"
+    ],
+    "DEN": [
+        "denver",
+        "denver nuggets",
+        "denver nugget",
+        "den",
+        "nuggets",
+        "nugget"
+    ],
+    "SAC": [
+        "sacramento",
+        "sacramento kings",
+        "sacramento king",
+        "sac",
+        "kings",
+        "king"
+    ],
+    "SAS": [
+        "san antonio",
+        "san antonio spurs",
+        "san antonio spur",
+        "sas",
+        "spurs",
+        "spur"
+    ],
+    "UTA": [
+        "utah",
+        "utah jazz",
+        "uta",
+        "jazz"
+    ],
+    "HOU": [
+        "houston",
+        "houston rockets",
+        "houston rocket",
+        "hou",
+        "rockets",
+        "rocket"
+    ],
+    "PHO": [
+        "phoenix",
+        "phoenix suns",
+        "phoenix sun",
+        "pho",
+        "suns",
+        "sun"
+    ],
+    "POR": [
+        "portland",
+        "portland trail blazers",
+        "portland trail blazer",
+        "por",
+        "trail",
+        "blazers"
+    ],
+    "DAL": [
+        "dallas",
+        "dallas mavericks",
+        "dallas maverick",
+        "dal",
+        "mavericks",
+        "maverick"
+    ],
+    "LAL": [
+        "la lakers",
+        "los angeles lakers",
+        "los angeles laker",
+        "lal",
+        "lakers",
+        "laker"
+    ],
+    "LAC": [
+        "la clippers",
+        "los angeles clippers",
+        "los angeles clipper",
+        "lac",
+        "clippers",
+        "clipper"
+    ],
+    "NOP": [
+        "new orleans",
+        "new orleans pelicans",
+        "new orleans pelican",
+        "nop",
+        "pelicans",
+        "pelican"
+    ],
+    "OKC": [
+        "oklahoma city",
+        "oklahoma city thunder",
+        "okc",
+        "thunder",
+        "oklahoma"
+    ]
+}

@@ -1,0 +1,6 @@
+*venv
+*.git
+*__pycache__
+*migrations
+/db.sqlite3
+/config.json

@@ -1,0 +1,374 @@
+{
+    "Greetings": {
+        "patterns": [
+            "hi",
+            "hi there",
+            "hey",
+            "hello",
+            "hello there",
+            "hi ya",
+            "hi you",
+            "hello you",
+            "greetings",
+            "yo",
+            "sup"
+        ],
+        "responses": [
+            "Hello!",
+            "Hi there!",
+            "Greetings, visitor.",
+            "Hello, you.",
+            "Hiya."
+        ],
+        "functionCode": ""
+    },
+    "courtesyGreetings": {
+        "patterns": [
+            "Hi, how are you?",
+            "Hello, how are you?",
+            "How is it going?",
+            "How are you doing?",
+            "Hope you are doing well"
+        ],
+        "responses": [
+            "I am great, thank you.",
+            "I am well, thank you.",
+            "Good, thank you."
+        ],
+        "functionCode": ""
+    },
+    "Goodbyes": {
+        "patterns": [
+            "Thanks, bye",
+            "Thanks, goodbye",
+            "Thank you, bye",
+            "Thank you, goodbye",
+            "bye",
+            "goodbye",
+            "See you later",
+            "Talk to you later",
+            "Later.",
+            "Cheers, bye"
+        ],
+        "responses": [
+            "No worries, bye",
+            "No worries, talk you later",
+            "Cheers, bye!",
+            "Talk to you later"
+        ],
+        "functionCode": ""
+    },
+    "Thanks": {
+        "patterns": [
+            "Thank you",
+            "Thanks",
+            "Cheers"
+        ],
+        "responses": [
+            "No worries!",
+            "No problem",
+            "My pleasure!",
+            "I'm glad",
+            "Any time!"
+        ],
+        "functionCode": ""
+    },
+    "Contact": {
+        "patterns": [
+            "Get in touch",
+            "Contact",
+            "Social media",
+            "Socials",
+            "How to get in touch?",
+            "How to contact you?",
+            "How can we get in touch?",
+            "How can I contact you?"
+        ],
+        "responses": [
+            "Contact me here:"
+        ],
+        "functionCode": "GetJsonData"
+    },
+    "WhatsTheDate": {
+        "patterns": [
+            "Tell me today's date",
+            "What's the date",
+            "What is the date",
+            "What is the date today",
+            "What is today's date",
+            "Date"
+        ],
+        "responses": [
+            "Today is: "
+        ],
+        "functionCode": "WhatsTheDate"
+    },
+    "WhatsTheTime": {
+        "patterns": [
+            "Tell me the time",
+            "What's the time",
+            "What is the time",
+            "What time it is",
+            "Time"
+        ],
+        "responses": [
+            "The current time is: "
+        ],
+        "functionCode": "WhatsTheTime"
+    },
+    "WhatsYourName": {
+        "patterns": [
+            "What's your name",
+            "What is your name",
+            "How do I call you",
+            "Tell me your name",
+            "Can you tell me you name",
+            "Name"
+        ],
+        "responses": [
+            "My name is Csaba.",
+            "You can call me Csaba.",
+            "Call me Csaba.",
+            "I am Csaba.",
+            "The name is, Csaba"
+        ],
+        "functionCode": ""
+    },
+    "Weather": {
+        "patterns": [
+            "What's the weather like",
+            "What's the weather like in",
+            "What is the weather like",
+            "What is the weather like in",
+            "How is the weather",
+            "How is the weather in",
+            "Weather report for",
+            "Weather report in",
+            "Tell me the weather",
+            "Tell me the weather for",
+            "Tell me the weather in"
+        ],
+        "responses": [
+            "Here is the weather for"
+        ],
+        "functionCode": "GetWeatherData"
+    },
+    "YouTubeSearch": {
+        "patterns": [
+            "youtube",
+            "ytube",
+            "yutube",
+            "youtube search",
+            "search youtube",
+            "youtube search for",
+            "search youtube for"
+        ],
+        "responses": [
+            "Here is the weather for"
+        ],
+        "functionCode": "YouTubeSearch"
+    },
+    "NBATeamInfo": {
+        "patterns": [
+            "record for",
+            "team record",
+            "team record for",
+            "team stats",
+            "team statistic",
+            "nba team record",
+            "nba team record for",
+            "nba team stats",
+            "nba team statistic",
+            "statistics for",
+            "stats for"
+        ],
+        "responses": [
+            "Here is what I've found..."
+        ],
+        "functionCode": "GetNBATeamInfo"
+    },
+    "NBAStandings": {
+        "patterns": [
+            "nba standings",
+            "nba conference standings",
+            "nba conference",
+            "conference standings",
+            "league standings",
+            "nba league standings"
+        ],
+        "responses": [
+            "Here is what I've found..."
+        ],
+        "functionCode": "GetNBAStandings"
+    },
+    "NASAapod": {
+        "patterns": [
+            "nasa apod",
+            "nasa picture",
+            "nasa photo",
+            "nasa apod picture",
+            "nasa apod photo",
+            "nasa photo of the day",
+            "astronomy picture of the day",
+            "nasa astronomy photo of the day",
+            "astronomy photo of the day",
+            "apod"
+        ],
+        "responses": [
+            "Here is what I've found..."
+        ],
+        "functionCode": "GetNASAapod"
+    },
+    "TVShowInfo": {
+        "patterns": [
+            "next episode",
+            "tv show",
+            "when is next episode of",
+            "when is next episode for",
+            "tv information",
+            "tv info",
+            "show info",
+            "tv show info"
+        ],
+        "responses": [
+            "Here is what I've found..."
+        ],
+        "functionCode": "GetTVShowInfo"
+    },
+    "StravaInfo": {
+        "patterns": [
+            "running stats",
+            "running statistics",
+            "cycling stats",
+            "cycling statistics",
+            "exercise stats",
+            "exercise statistics",
+            "strava stats",
+            "strava statistics",
+            "strava",
+            "sport stats",
+            "what do you do for sport",
+            "do you exercise",
+            "strava activities",
+            "strava activity"
+        ],
+        "responses": [
+            "Here is my data from Strava..."
+        ],
+        "functionCode": "GetJsonData"
+    },
+    "SpotifyInfo": {
+        "patterns": [
+            "spotify stats",
+            "spotify statistics",
+            "spotify",
+            "spotify activities",
+            "spotify activity",
+            "spotify wrapped",
+            "music",
+            "top artists on spotify",
+            "top tracks on spotify",
+            "top music on spotify"
+        ],
+        "responses": [
+            "Here is my data from Spotify..."
+        ],
+        "functionCode": "GetJsonData"
+    },
+    "TellMeAboutYourself": {
+        "patterns": [
+            "Introduce yourself",
+            "Tell me something about you",
+            "Tell me who are you",
+            "Who are you",
+            "Tell me something about yourself",
+            "Introduction"
+        ],
+        "responses": [
+            "My name is Csaba, I'm a HR Technology Lead working for BP Plc, living in London. I have a great work ethic and I am always committed to delivering my priorities to a high standard. I always take ownership of activities and tasks, communicate well to ensure stakeholders and clients are in the loop, take initiative to find information and resolve issues quickly."
+        ],
+        "functionCode": ""
+    },
+    "WhatAreYouDoing": {
+        "patterns": [
+            "What are you doing",
+            "What is your job",
+            "What is your current role",
+            "What do you do",
+            "Work",
+            "Current work",
+            "Job",
+            "Current job",
+            "Current role",
+            "What is your role",
+            "Role"
+        ],
+        "responses": [
+            "I am a HR Technology Lead at BP. I'm responsible for providing technology based solutions to our stakeholders. Planning, organising and leading the design, configuration, testing and deployment. Maintaining the health and operational integrity of our solutions and products."
+        ],
+        "functionCode": ""
+    },
+    "PersonalProjects": {
+        "patterns": [
+            "Personal projects",
+            "Coding projects",
+            "Coding portfolio",
+            "Personal portfolio",
+            "portfolio",
+            "personal coding projects"
+        ],
+        "responses": [
+            "Password Manager App",
+            "NBA Webscraper with YouTube highlights",
+            "Python Chatbot"
+        ],
+        "functionCode": ""
+    },
+    "Jokes": {
+        "patterns": [
+            "Telle me a joke",
+            "Do you know any jokes",
+            "How about a joke",
+            "Make me laugh",
+            "Joke"
+        ],
+        "responses": [
+            "I met a Dutch girl with inflatable shoes last week, phoned her up to arrange a date but unfortunately she'd popped her clogs.  ",
+            "So I said 'Do you want a game of Darts?' He said, 'OK then', I said nearest to bull starts'. He said, 'Baa', I said, 'Moo', he said, You're closest'.  ",
+            "The other day I sent my girlfriend a huge pile of snow. I rang her up; I said 'Did you get my drift?'  ",
+            "So I went down the local supermarket, I said, 'I want to make a complaint, this vinegar's got lumps in it', he said, 'Those are pickled onions'.  ",
+            "I saw this bloke chatting up a cheetah; I thought, 'He's trying to pull a fast one'.  ",
+            "So I said to this train driver 'I want to go to Paris'. He said 'Eurostar?' I said, 'I've been on telly but I'm no Dean Martin'.  ",
+            "I said to the Gym instructor 'Can you teach me to do the splits?' He said, 'How flexible are you?' I said, 'I can't make Tuesdays'.  ",
+            "But I'll tell you what I love doing more than anything: trying to pack myself in a small suitcase. I can hardly contain myself.  ",
+            "I went to the Chinese restaurant and this duck came up to me with a red rose and says 'Your eyes sparkle like diamonds'. I said, 'Waiter, I asked for a-ROMATIC duck'.  ",
+            "So this bloke says to me, 'Can I come in your house and talk about your carpets?' I thought, 'That's all I need, a Je-hoover's witness'.  ",
+            "I rang up British Telecom, I said, 'I want to report a nuisance caller', he said 'Not you again'.  ",
+            "I was having dinner with a world chess champion and there was a check tablecloth. It took him two hours to pass me the salt.  ",
+            "He said, 'You remind me of a pepper-pot', I said 'I'll take that as a condiment'.  ",
+            "I was in the supermarket and I saw this man and woman wrapped in a barcode. I said, 'Are you two an item?'  ",
+            "A lorry-load of tortoises crashed into a trainload of terrapins, I thought, 'That's a turtle disaster'.  ",
+            "Four fonts walk into a bar the barman says 'Oi - get out! We don't want your type in here'  ",
+            "A three-legged dog walks into a saloon in the Old West. He slides up to the bar and announces: 'I'm looking for the man who shot my paw.'  ",
+            "Two antennas meet on a roof, fall in love and get married. The ceremony wasn't much, but the reception was excellent.",
+            "Two hydrogen atoms walk into a bar. One says, 'I've lost my electron.' The other says, 'Are you sure?' The first replies, 'Yes, I'm positive...'",
+            "A jumper cable walks into a bar. The bartender says,  'I'll serve you but don't start anything.'",
+            "A sandwich walks into a bar. The bartender  says, 'Sorry we don't serve food in here.'",
+            "A man walks into a bar with a slab of asphalt under his arm and says: 'A beer please, and one for the road.'",
+            "Two cannibals are eating a clown. One says to  the other: 'Does this taste funny to you?'",
+            "'Doc, I can't stop singing 'The Green, Green Grass of Home.'' 'That sounds like Tom Jones Syndrome.' 'Is it common?' 'It's Not Unusual.'",
+            "Two cows standing next to each other in a field. Daisy says to Dolly, 'I was artificially inseminated this morning.' 'I don't believe you', said Dolly. 'It's true, no bull!' exclaimed Daisy.",
+            "An invisible man marries an invisible woman. The kids were nothing to look at either.",
+            "I went to buy some camouflage trousers the other day but I couldn't find any.",
+            "I went to the butcher's the other day to bet him 50 bucks that he couldn't reach the meat off the top shelf. He said, 'No, the steaks are too high.'",
+            "I went to a seafood disco last week and pulled a mussel.",
+            "A man goes into a bar and says, 'Can I have a bottle of less?' 'What's that?', asks the barman, 'Is it the name of a beer?' 'I don't know', replies the man, 'but my doctor says I have to drink it.'",
+            "A man returns from an exotic holiday and is feeling very ill. He goes to see his doctor, and is immediately rushed to the hospital to undergo some tests. The man wakes up after the tests in a private room at the hospital, and the phone by his bed rings. 'This is your doctor. We have the results back from your tests and we have found you have an extremely nasty disease called M.A.D.S. It's a combination of Measles, AIDS, Diphtheria, and Shingles!'  'Oh my gosh', cried the man, 'What are you going to do, doctor?'  'Well we're going to put you on a diet of pizzas, pancakes, and pita bread.' replied the doctor.  'Will that cure me?' asked the man.  The doctor replied, 'Well no, but, it's the only food we can slide under the door.'",
+            "A man strolls into a lingerie shop and asks the assistant: 'Do you have a see-through negligee, size 46-48-52?' The assistant looks bewildered. 'What the heck would you want to see through that for?'!",
+            "Did you hear about the Buddhist who refused the offer of Novocain during his root canal work? He wanted to transcend dental medication.",
+            "Pete goes for a job on a building site as an odd-job man. The foreman asks him what he can do. 'I can do anything' says Pete. 'Can you make tea?' asks the foreman. 'Sure, yes', replies Pete. 'I can make a great cup of tea.' 'Can you drive a forklift?' asks the foreman, 'Good grief!' replies Pete. 'How big is the teapot?'",
+            "Stevie Wonder got a cheese grater for his birthday. He said it was the most violent book he'd ever read."
+        ],
+        "functionCode": ""
+    }
+}
