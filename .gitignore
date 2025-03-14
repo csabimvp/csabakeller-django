@@ -5,3 +5,6 @@
 *migrations
 /db.sqlite3
 /config.json
+*static
+*punkt_tab
+/chatbot/nltk/tokenizers/punkt_tab.zip

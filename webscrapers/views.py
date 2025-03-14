@@ -1,5 +1,7 @@
 import re
 import json
+import os
+from pathlib import Path
 from datetime import timedelta
 
 # Django and Rest Framework imports.
@@ -25,7 +27,10 @@ from .analytics import (
     season_leaders_table,
 )
 
-f = open("/home/csabimvp/code/csabakeller/webscrapers/assets/nba_teams.json")
+BASE_DIR = Path(__file__).resolve().parent.parent
+WEBSCRAPERS_DIR = os.path.join(BASE_DIR, "webscrapers")
+
+f = open(os.path.join(WEBSCRAPERS_DIR, "assets", "nba_teams.json"))
 teams = json.load(f)
 
 # custom API view for web scraped NBA stats data
@@ -46,7 +51,7 @@ class NbaStatsView(generics.ListAPIView):
 
         # Scrape the webs.
         games_data, date = nba_scoreboard_scraper(url1)
-        hooper_highlights = scrape_hooper_highlights(date)
+        # hooper_highlights = scrape_hooper_highlights(date)
         motions_highlights = scrape_motion_station(date)
         player_stats = nba_stats_daily_leaders_scraper(url2)
         nba_standings = nba_standings_scraper(url3)
@@ -62,11 +67,11 @@ class NbaStatsView(generics.ListAPIView):
             game["winner_long_name"] = teams[winner][1]
             game["loser_long_name"] = teams[loser][1]
 
-            for hooper_highlight in hooper_highlights:
-                hooper_title = hooper_highlight["title"]
+            # for hooper_highlight in hooper_highlights:
+            #     hooper_title = hooper_highlight["title"]
 
-                if re.search(winner, hooper_title) and re.search(loser, hooper_title):
-                    game["hooper_video_id"] = hooper_highlight["video_id"]
+            #     if re.search(winner, hooper_title) and re.search(loser, hooper_title):
+            #         game["hooper_video_id"] = hooper_highlight["video_id"]
 
             for motion_highlight in motions_highlights:
                 motion_title = motion_highlight["title"]

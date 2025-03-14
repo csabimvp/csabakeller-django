@@ -20,6 +20,7 @@ from tensorflow.keras.models import load_model
 
 # Download NLTK documents.
 # nltk.download('punkt', download_dir=os.path.join(CHATBOT_DIR, "nltk"))
+# nltk.download('punkt_tab', download_dir=os.path.join(CHATBOT_DIR, "nltk"))
 # nltk.download('wordnet', download_dir=os.path.join(CHATBOT_DIR, "nltk"))
 
 

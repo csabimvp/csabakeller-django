@@ -388,7 +388,10 @@ def team_player_stats(team):
 
 
 def scrape_hooper_highlights(date):
-    f = open("/home/csabimvp/mywebsite/config.json")
+    from pathlib import Path
+    import os
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    f = open(os.path.join(BASE_DIR, "config.json"))
     config = json.load(f)
 
     bb_date = datetime.strptime(date, "%b %d, %Y")
@@ -434,7 +437,10 @@ def scrape_hooper_highlights(date):
 
 
 def scrape_motion_station(date):
-    f = open("/home/csabimvp/mywebsite/config.json")
+    from pathlib import Path
+    import os
+    BASE_DIR = Path(__file__).resolve().parent.parent
+    f = open(os.path.join(BASE_DIR, "config.json"))
     config = json.load(f)
 
     bb_date = datetime.strptime(date, "%b %d, %Y")
