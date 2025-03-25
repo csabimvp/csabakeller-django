@@ -4,6 +4,7 @@ from rest_framework.renderers import JSONRenderer
 from rest_framework.response import Response
 from rest_framework import generics
 from django_filters import rest_framework as filters
+from dj_rest_auth.views import LoginView
 
 
 # Local imports
@@ -50,3 +51,9 @@ class AccountsView(viewsets.ModelViewSet):
     serializer_class = AccountSerializer
     filter_backends = [filters.DjangoFilterBackend]
     filterset_class = AccountFilter
+
+
+class CustomLoginView(LoginView):
+    def get_response(self):
+        orginal_response = super().get_response()
+        return orginal_response

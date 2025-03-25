@@ -56,7 +56,7 @@ INSTALLED_APPS = [
     # 3rd part Apps
     "rest_framework",
     "rest_framework.authtoken",
-    # "allauth",
+    "allauth",
     # "allauth.account",
     # DJ Rest Auth requirements to make the registration function work...
     "dj_rest_auth",
