@@ -1,11 +1,13 @@
-import requests
 import json
+import os
+from dataclasses import asdict, dataclass
 from datetime import datetime
+from pathlib import Path
+
+import psycopg2
+import requests
 from bs4 import BeautifulSoup
 from googleapiclient.discovery import build
-from pathlib import Path
-import os
-
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -369,3 +371,127 @@ def YouTubeSearch(query):
     youtube = build("youtube", "v3", developerKey=config["YOUTUBE_API_KEY"])
     r = youtube.search().list(part="snippet", q=query, maxResults=5).execute()
     return r["items"]
+
+
+def StravaExtractDataFromSQL():
+    # Postgres Database Connection
+    conn = psycopg2.connect(
+        # "host=192.168.0.86 user=csabimvp password= dbname=strava"
+        f"host=localhost user={config["POSTGRES"]["USER"]} password={config["POSTGRES"]["PASSWORD"]} dbname=utlities"
+    )
+
+    with conn.cursor() as cursor:
+        ### Activities
+        # Schema Query
+        activities_schema_query = f"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='strava' AND TABLE_NAME='athlete_activities';"
+        cursor.execute(activities_schema_query)
+        activities_schema = [s[0] for s in cursor]
+        # Data Query
+        activities_data_query = (
+            f"SELECT * FROM strava.athlete_activities ORDER BY start_date DESC LIMIT 5;"
+        )
+        cursor.execute(activities_data_query)
+        activities_data = cursor.fetchall()
+        activities_container = [
+            {activities_schema[i]: item[i] for i in range(len(activities_schema))}
+            for item in activities_data
+        ]
+        cleaned_container = [
+            {
+                k: elem[k]
+                for k in (
+                    "activity_id",
+                    "distance",
+                    "moving_time",
+                    "kudos_count",
+                    "pr_count",
+                    "achievement_count",
+                    "sport_type",
+                    "start_date",
+                )
+            }
+            for elem in activities_container
+        ]
+
+        ### Stats
+        # Schema Query
+        stats_schema_query = f"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='strava' AND TABLE_NAME='athlete_stats';"
+        cursor.execute(stats_schema_query)
+        stats_schema = [s[0] for s in cursor]
+        # Data Query
+        data_query = f"SELECT * FROM strava.athlete_stats WHERE sport_type = 'running' AND stat_type IN ('all_time', 'year_to_date');"
+        cursor.execute(data_query)
+        stats_data = cursor.fetchall()
+        container = [
+            {stats_schema[i]: item[i] for i in range(len(stats_schema))}
+            for item in stats_data
+        ]
+
+        # API Response
+        response = {}
+        response["activites"] = cleaned_container
+        response["stats"] = container
+    return response
+
+
+def SpotifyExtractDataFromSQL():
+    # Postgres Database Connection
+    conn = psycopg2.connect("host=192.168.0.86 user=csabimvp password= dbname=spotify")
+
+    with conn.cursor() as cursor:
+        ### Activities
+        # Schema Query
+        activities_schema_query = f"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='strava' AND TABLE_NAME='athlete_activities';"
+        cursor.execute(activities_schema_query)
+        activities_schema = [s[0] for s in cursor]
+        # Data Query
+        activities_data_query = (
+            f"SELECT * FROM strava.athlete_activities ORDER BY start_date DESC LIMIT 5;"
+        )
+        cursor.execute(activities_data_query)
+        activities_data = cursor.fetchall()
+        activities_container = [
+            {activities_schema[i]: item[i] for i in range(len(activities_schema))}
+            for item in activities_data
+        ]
+        cleaned_container = [
+            {
+                k: elem[k]
+                for k in (
+                    "activity_id",
+                    "distance",
+                    "moving_time",
+                    "kudos_count",
+                    "pr_count",
+                    "achievement_count",
+                    "sport_type",
+                    "start_date",
+                )
+            }
+            for elem in activities_container
+        ]
+
+        ### Stats
+        # Schema Query
+        stats_schema_query = f"SELECT COLUMN_NAME FROM INFORMATION_SCHEMA.COLUMNS WHERE TABLE_SCHEMA='strava' AND TABLE_NAME='athlete_stats';"
+        cursor.execute(stats_schema_query)
+        stats_schema = [s[0] for s in cursor]
+        # Data Query
+        data_query = f"SELECT * FROM strava.athlete_stats WHERE sport_type = 'running' AND stat_type IN ('all_time', 'year_to_date');"
+        cursor.execute(data_query)
+        stats_data = cursor.fetchall()
+        container = [
+            {stats_schema[i]: item[i] for i in range(len(stats_schema))}
+            for item in stats_data
+        ]
+
+        # API Response
+        response = {}
+        response["activites"] = cleaned_container
+        response["stats"] = container
+    return response
+
+
+if __name__ == "__main__":
+    response = StravaExtractDataFromSQL()
+    print(response)
