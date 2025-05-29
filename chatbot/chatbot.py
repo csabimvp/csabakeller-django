@@ -195,9 +195,9 @@ def handle_question(question):
                     value = function_mappings[function_code](variables)
                 content["value"] = value
             # Strava
-            elif intent == "StravaInfo":
-                value = GetJsonData("STRAVA")
-                content["value"] = value
+            # elif intent == "StravaInfo":
+            #     value = GetJsonData("STRAVA")
+            #     content["value"] = value
             # Spotify
             elif intent == "SpotifyInfo":
                 value = GetJsonData("SPOTIFY")
