@@ -1,18 +1,17 @@
 # required modules
-import random
 import json
-import pickle
-import numpy as np
-from pathlib import Path
 import os
+import pickle
+import random
+from pathlib import Path
 
+import numpy as np
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 CHATBOT_DIR = os.path.join(BASE_DIR, "chatbot")
 
 # import pandas as pd
 import nltk
-
 from tensorflow.keras.models import load_model
 
 # from nltk.stem import WordNetLemmatizer
@@ -30,17 +29,17 @@ nltk.data.path.append(os.path.join(CHATBOT_DIR, "nltk"))
 
 # Import chatbot functions
 from .chatbot_functions import (
-    WhatsTheTime,
-    WhatsTheDate,
-    GetWeatherData,
-    GetNBATeamInfo,
-    GetTVShowInfo,
     GetJsonData,
     GetNASAapod,
     GetNBAStandings,
+    GetNBATeamInfo,
+    GetTVShowInfo,
+    GetWeatherData,
+    StravaExtractDataFromSQL,
+    WhatsTheDate,
+    WhatsTheTime,
     YouTubeSearch,
 )
-
 
 # Global variables.
 # lemmatizer = WordNetLemmatizer()
@@ -149,7 +148,7 @@ function_mappings = {
     "GetWeatherData": GetWeatherData,
     "GetNBATeamInfo": GetNBATeamInfo,
     "GetTVShowInfo": GetTVShowInfo,
-    "StravaInfo": GetJsonData,
+    "StravaInfo": StravaExtractDataFromSQL,
     "SpotifyInfo": GetJsonData,
     "Contact": GetJsonData,
     "GetNASAapod": GetNASAapod,
