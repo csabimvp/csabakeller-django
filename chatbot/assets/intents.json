@@ -255,7 +255,7 @@
         "responses": [
             "Here is my data from Strava..."
         ],
-        "functionCode": "GetJsonData"
+        "functionCode": "StravaExtractDataFromSQL"
     },
     "SpotifyInfo": {
         "patterns": [
