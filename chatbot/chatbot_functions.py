@@ -377,7 +377,7 @@ def StravaExtractDataFromSQL():
     # Postgres Database Connection
     conn = psycopg2.connect(
         # "host=192.168.0.86 user=csabimvp password= dbname=strava"
-        f"host=localhost user={config["POSTGRES"]["USER"]} password={config["POSTGRES"]["PASSWORD"]} dbname=utlities"
+        f"host=localhost user={config["POSTGRES"]["USER"]} password={config["POSTGRES"]["PASSWORD"]} dbname=utilities"
     )
 
     with conn.cursor() as cursor:

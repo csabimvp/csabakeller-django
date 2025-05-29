@@ -195,9 +195,9 @@ def handle_question(question):
                     value = function_mappings[function_code](variables)
                 content["value"] = value
             # Strava
-            # elif intent == "StravaInfo":
-            #     value = GetJsonData("STRAVA")
-            #     content["value"] = value
+            elif intent == "StravaInfo":
+                value = StravaExtractDataFromSQL()
+                content["value"] = value
             # Spotify
             elif intent == "SpotifyInfo":
                 value = GetJsonData("SPOTIFY")
@@ -225,3 +225,7 @@ def handle_question(question):
 #     print("How can I help?")
 #     query = input("")
 #     print(handle_question(query))
+
+
+if __name__ == "__main__":
+    print(handle_question("strava"))
